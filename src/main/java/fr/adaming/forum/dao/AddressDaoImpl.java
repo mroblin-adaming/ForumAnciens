@@ -24,7 +24,7 @@ public class AddressDaoImpl implements IAddressDao {
 	}
 
 	@Override
-	public Address getAdresse(int idAddress) {
+	public Address getAdresseById(int idAddress) {
 		Address a = em.find(Address.class, idAddress);
 		log.info("L'adresse "+a+" est dans la base de donnée" );
 		return a;
