@@ -8,6 +8,8 @@
 	<class>fr.adaming.forum.entity.Role</class>
 	<class>fr.adaming.forum.entity.Formation</class>
 	<class>fr.adaming.forum.entity.Skill</class>
+	<class>fr.adaming.forum.entity.Comment</class>
+	
 
 <properties>
 <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
