@@ -35,7 +35,7 @@ public class CompanyDaoImpl implements ICompanyDao {
 	}
 
 	@Override
-	public Company deleteCompany(int idCompany) {
+	public Company deleteCompany(Long idCompany) {
 		Company company = em.find(Company.class, idCompany);
 		em.remove(company);
 		log.info("La société" + company.getCompanyName()+ " à été supprimé");
@@ -43,7 +43,7 @@ public class CompanyDaoImpl implements ICompanyDao {
 	}
 
 	@Override
-	public Company getCompanyById(int idCompany) {
+	public Company getCompanyById(Long idCompany) {
 		Company company = em.find(Company.class, idCompany);
 		log.info("L'utilisateur"+company.getCompanyName()+ " à été trouvé");
 		return company;
