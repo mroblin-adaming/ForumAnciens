@@ -29,7 +29,7 @@ public class RoleDaoImpl implements IRoleDao {
 
 	@Override
 	public Role updateRole(Role role) {
-		em.persist(role);
+		em.merge(role);
 		
 		log.info("Le role " + role.getIdRole() + " a bien été modifié !");
 		return role;
